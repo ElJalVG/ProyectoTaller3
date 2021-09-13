@@ -42,6 +42,10 @@ public class Ai2 : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
         }
+        else 
+        {
+
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -54,6 +58,7 @@ public class Ai2 : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+       
     }
 
 }
