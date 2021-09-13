@@ -11,23 +11,5 @@ public class Bala : MonoBehaviour
     {
         rb.velocity = transform.right * speed;
     }
-<<<<<<< HEAD
     
-=======
-    //void OnTriggerEnter2D(Collider2D hitInfo)
-    //{
-    //    Enemy enemy = hitInfo.GetComponent<Enemy>();
-    //    if (enemy != null)
-    //    {
-    //        enemy.TakeDamage(damage);
-    //    }
-    //    Destroy(gameObject);
-    //}
-    private void OnBecameInvisible()
-    {
-
-        Destroy(gameObject);
-
-    }
->>>>>>> 46f0f85574b3f5074f26c0d97b276f6e859f2f6a
 }

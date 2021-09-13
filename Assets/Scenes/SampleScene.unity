@@ -225,7 +225,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 10250612}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -40.1, y: -157.9, z: 8}
@@ -233,16 +232,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1334803673}
   m_RootOrder: 42
-=======
-  m_GameObject: {fileID: 676157420}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.45, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1538226912}
-  m_Father: {fileID: 1712472437}
-  m_RootOrder: 0
->>>>>>> 46f0f85574b3f5074f26c0d97b276f6e859f2f6a
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &10250614
 SpriteRenderer:
@@ -317,17 +306,10 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 26142609}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 69.89, y: -87.89, z: 8}
   m_LocalScale: {x: 0.6745002, y: 0.7183863, z: 0.67859924}
-=======
-  m_GameObject: {fileID: 1538226911}
-  m_LocalRotation: {x: 0, y: 0, z: -0.38268343, w: 0.92387956}
-  m_LocalPosition: {x: 0.7, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
->>>>>>> 46f0f85574b3f5074f26c0d97b276f6e859f2f6a
   m_Children: []
   m_Father: {fileID: 1334803673}
   m_RootOrder: 104
@@ -16328,17 +16310,10 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 2109655414}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.06932831, y: 2.0933354, z: 8}
   m_LocalScale: {x: 0.6745002, y: 0.7183863, z: 0.67859924}
-=======
-  m_GameObject: {fileID: 1842139925}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
->>>>>>> 46f0f85574b3f5074f26c0d97b276f6e859f2f6a
   m_Children: []
   m_Father: {fileID: 1334803673}
   m_RootOrder: 0
