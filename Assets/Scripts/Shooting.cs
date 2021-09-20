@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
+
     public Transform firePoint;
     public GameObject bulletPrefab;
     public float bulletForce = 20f;
+    [SerializeField]
+    private float _fireRate = 0.25f;
+    private float _canFire = 0.0f;
 
 
     // Update is called once per frame
@@ -17,8 +21,15 @@ public class Shooting : MonoBehaviour
             Shoot();
         }
     }
+
     void Shoot()
     {
-        GameObject bala = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        if (Time.time > _canFire)
+        {
+            GameObject bala = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            _canFire = Time.time + _fireRate;
+        }
+
+
     }
 }
