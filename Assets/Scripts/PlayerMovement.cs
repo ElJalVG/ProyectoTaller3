@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
         //spriteRender.flipX = movement.x < 0;
+
         Vector3 scale = new Vector3(movement.x < 0 ? -1 : 1, 1, 1);
         transform.localScale = scale;
 
