@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     Vector2 movement;
     [SerializeField]
     int health = 100;
+    public GameObject attackPoint;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,10 +23,10 @@ public class PlayerMovement : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-        //spriteRender.flipX = movement.x < 0;
-
-        Vector3 scale = new Vector3(movement.x < 0 ? -1 : 1, 1, 1);
-        transform.localScale = scale;
+        spriteRender.flipX = movement.x < 0;
+        attackPoint.transform.localPosition= new Vector3(movement.x<0?-1.45f:1.45f,attackPoint.transform.localPosition.y,attackPoint.transform.localPosition.z);
+        //Vector3 scale = new Vector3(movement.x < 0 ? -1 : 1, 1, 1);
+        //transform.localScale = scale;
 
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
