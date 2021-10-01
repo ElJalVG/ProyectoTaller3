@@ -10,12 +10,19 @@ public class PlayerMovement : MonoBehaviour
     SpriteRenderer spriteRender;
     Vector2 movement;
     [SerializeField]
-    int health = 100;
+   public float health = 100f;
     public GameObject attackPoint;
+    public VidaPlayer _uiManager;
+
     // Start is called before the first frame update
     void Start()
     {
         spriteRender = GetComponent<SpriteRenderer>();
+        _uiManager = GameObject.Find("Player").GetComponent<VidaPlayer>();
+        if (_uiManager != null)
+        {
+            _uiManager.UpdateLives(health);
+        }
     }
 
     // Update is called once per frame
@@ -41,11 +48,15 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.tag == "BulletEnemy")
         {
             health -= 10;
+
             Destroy(collision.gameObject);
             if (health <= 0)
             {
                 Destroy(gameObject);
             }
+
         }
+        _uiManager.UpdateLives(health);
+
     }
 }
